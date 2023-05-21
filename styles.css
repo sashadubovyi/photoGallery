@@ -62,22 +62,18 @@ body {
     max-width: 1440px;
   }
 }
-/* gallery img */
 
 .gallery__image {
-  width: 400px;
   height: 250px;
 }
 
 @media only screen and (min-width: 768px) {
   .gallery__image {
-    width: 600px;
-    height: auto;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .gallery__image {
-    width: 800px;
     height: 650px;
   }
 }
@@ -105,14 +101,30 @@ header {
 .menuLink {
   font-size: 13px;
 }
-/* about me */
 
-/* main */
+@media only screen and (min-width: 768px) {
+  .menuLink {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .menuLink {
+    font-size: 20px;
+  }
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    padding-top: 32px;
+  }
 }
 
 .sectionTitle {
@@ -126,7 +138,6 @@ header {
   align-items: flex-end;
 }
 
-/* main photo  */
 .gallery {
   margin-bottom: 40px;
   display: flex;
@@ -179,27 +190,27 @@ img {
 }
 
 .subtitle {
-  /* font-size: small; */
   color: #3e3e3e;
 }
 
-/* footer */
 footer {
   display: none;
 }
-
-/* simplelightbox */
 
 button {
   padding: 8px 12px;
   cursor: pointer;
 }
 
+button:hover,
+button:focus {
+  transform: scale(1.5);
+}
+
 input {
   padding: 8px;
   font: inherit;
 }
-/*  */
 .contactsList {
   display: flex;
   gap: 25px;
